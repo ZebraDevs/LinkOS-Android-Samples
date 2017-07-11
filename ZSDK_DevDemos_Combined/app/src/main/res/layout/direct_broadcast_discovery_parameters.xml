@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView
+		android:id="@+id/label"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="IP address:" />
+
+	<EditText
+	    android:id="@+id/directed_broadcast_ip"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/label"
+	    android:background="@android:drawable/editbox_background"
+	    android:hint="e.g. 192.168.1.255"
+	    android:inputType="textNoSuggestions|text"
+	    android:textColor="@android:color/black"
+	    android:textColorHint="@android:color/darker_gray" />
+
+	<Button
+		android:id="@+id/do_directed_broadcast"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/directed_broadcast_ip"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="10dip"
+		android:text="Discover Printers" />
+
+</RelativeLayout>

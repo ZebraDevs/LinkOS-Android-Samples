@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/sig_capture_demo"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<com.zebra.android.devdemo.sigcapture.SignatureArea
+		android:id="@+id/sigArea"
+		android:text="Test"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+</LinearLayout>

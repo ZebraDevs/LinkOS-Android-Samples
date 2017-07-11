@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="connection_builder_prefixes">
+        <item>No Prefix...</item>
+        <item>TCP_MULTI</item>
+        <item>TCP</item>
+        <item>TCP_STATUS</item>
+        <item>BT_MULTI</item>
+        <item>BT</item>
+        <item>BT_STATUS</item>
+    </string-array>
+</resources>

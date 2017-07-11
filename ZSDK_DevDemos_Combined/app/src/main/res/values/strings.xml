@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ZSDK Developer Demos</string>
+
+    <string-array name="DEMO_APPS">
+        <item>Connectivity</item>
+        <item>Discovery</item>
+        <item>Image Print</item>
+        <item>List Formats</item>
+        <item>Mag Card</item>
+        <item>Printer Status</item>
+        <item>Smart Card</item>
+        <item>Signature Capture</item>
+        <item>Send File</item>
+        <item>Stored Format</item>
+        <item>Status Channel</item>
+        <item>Connection Builder</item>
+        <item>Receipt</item>
+        <item>Multichannel</item>
+        </string-array>
+    <string-array name="DISCODEMO_DISCO_METHODS">
+        <item>Bluetooth</item>
+        <item>Local Broadcast</item>
+        <item>Directed Broadcast</item>
+        <item>Multicast</item>
+        <item>Subnet Search</item>
+        <item>Find printers near me</item>
+    </string-array>
+
+    <color name="Red">#FF0000</color>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

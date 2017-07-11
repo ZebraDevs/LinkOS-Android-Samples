@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zebra.android.devdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+	<uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+	
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" 
+        android:allowBackup="false">
+        <activity
+            android:name="com.zebra.android.devdemo.LoadDevDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.DiscoveryDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovery Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.BluetoothDiscovery"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.MulticastDiscoveryResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.DirectedBroadcastResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.DirectedBroadcastParameters"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Directed Broadcast Parameters"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.SubnetSearchResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.SubnetSearchParameters"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Subnet Search Parameters"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.LocalBroadcastDiscoveryResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.FindPrintersDiscoveryResultList"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Discovered Printers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.discovery.MulticastDiscoveryParameters"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Multicast Parameters"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.imageprint.ImagePrintDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Image Print Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.magcard.MagCardDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Mag Card Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.status.PrintStatusDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Printer Status Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.smartcard.SmartCardDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Smart Card Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.sigcapture.SigCaptureDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Signature Capture Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.sendfile.SendFileDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Send File Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.storedformat.StoredFormatScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Stored Format Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.storedformat.StoredFormatDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.storedformat.VariablesScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.connectivity.ConnectivityDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Connectivity Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.status.PrinterStatusScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Status Messages"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.listformats.ListFormatsScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="List Formats Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.listformats.ListFormatsDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.statuschannel.StatusChannelDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Status Channel"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.statuschannel.StatusChannelScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Status Channel View"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.multichannel.MultiChannelDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Multichannel"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.multichannel.MultiChannelScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Multichannel View"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.connectionbuilder.ConnectionBuilderDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Connection Builder Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.zebra.android.devdemo.receipt.ReceiptDemo"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Receipt Demo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        </application>
+
+</manifest>

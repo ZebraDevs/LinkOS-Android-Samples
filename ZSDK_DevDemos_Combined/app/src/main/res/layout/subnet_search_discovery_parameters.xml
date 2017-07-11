@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView
+		android:id="@+id/label"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Subnet Range:" />
+
+	<EditText
+		android:id="@+id/subnet_search_range"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:inputType="textNoSuggestions|text"
+		android:background="@android:drawable/editbox_background"
+		android:layout_below="@id/label"
+		android:hint="e.g. 192.168.1.*" 
+		android:textColor="@android:color/black"
+	    android:textColorHint="@android:color/darker_gray" />
+
+	<Button
+		android:id="@+id/do_subnet_search"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/subnet_search_range"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="10dip"
+		android:text="Discover Printers" />
+
+</RelativeLayout>

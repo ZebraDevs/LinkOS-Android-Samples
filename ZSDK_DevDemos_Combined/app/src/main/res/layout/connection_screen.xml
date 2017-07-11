@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/connection_screen_layout"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:gravity="center_horizontal"
+	android:layout_height="fill_parent">
+
+	<RadioGroup
+		android:id="@+id/radioGroup"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<RadioButton
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+			android:id="@+id/ipDnsRadio"
+			android:text="IP/DNS"
+			android:checked="true" />
+		<RadioButton
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+			android:id="@+id/bluetoothRadio"
+			android:text="Bluetooth (R)" />
+	</RadioGroup>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/ipAddressText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Ip Address:"
+			android:textSize="20.0sp"
+			android:layout_weight="1" />
+		<EditText
+			android:id="@+id/ipAddressInput"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textNoSuggestions|text"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:id="@+id/portLayout"
+		android:visibility="visible"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/portText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20.0sp"
+			android:text="Port:"
+			android:layout_weight="1" />
+		<EditText
+			android:id="@+id/portInput"
+			android:text="9100"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:maxLength="5"
+			android:inputType="number"
+			android:layout_weight="1" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/statusPortLayout"
+		android:visibility="gone"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/statusPortText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20.0sp"
+			android:text="Status Port:"
+			android:layout_weight="1" />
+		<EditText
+			android:id="@+id/statusPortInput"
+			android:text="9200"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:maxLength="5"
+			android:inputType="number"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/macAddressText"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20.0sp"
+			android:text="MAC Address:"
+			android:layout_weight="1" />
+		<EditText
+			android:id="@+id/macInput"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:enabled="false"
+			android:inputType="textNoSuggestions|text"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/testButton"
+		android:text="Test"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" />
+	
+	<Button
+		android:id="@+id/secondTestButton"
+		android:text="Find Available Channels"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" />
+	
+</LinearLayout>
