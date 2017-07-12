@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discovered_printers"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:background="@color/zebra_blue"
+        android:padding="@dimen/margin_default" />
+
+    <ListView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discoveredPrintersListView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height_default"
+        android:text="@string/searching_for_printers"
+        android:id="@+id/discoveredPrintersEmptyView"
+        android:visibility="gone"
+        android:gravity="center">
+
+    </TextView>
+
+</LinearLayout>

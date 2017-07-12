@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="row_height_default">48dp</dimen>
+    <dimen name="row_icon_margin">6dp</dimen>
+    <dimen name="scroll_view_bottom">88dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="elevation_default">2dp</dimen>
+    <dimen name="table_elevation">24dp</dimen>
+    <dimen name="upper_margin">10dp</dimen>
+    <dimen name="prog_bar_margin">30dp</dimen>
+
+    <dimen name="button_height">64dp</dimen>
+    <dimen name="button_buffer">40dp</dimen>
+</resources>

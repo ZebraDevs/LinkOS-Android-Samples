@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PDF Print</string>
+
+    <string name="zebra_technologies_corp">Zebra Technologies Corp.</string>
+    <string name="zebra_address_line_1">3 Overlook Point</string>
+    <string name="zebra_address_line_2">Lincolnshire, IL, 60029</string>
+
+    <string name="connecting_to_printer">Connecting to printer&#8230;</string>
+    <string name="connected_to_printer">Connected to printer</string>
+    <string name="no_printer_selected">No printer selected</string>
+    <string name="printer_name">Printer name:</string>
+    <string name="printer_address">Printer address:</string>
+    <string name="discovered_printers">Discovered printers</string>
+    <string name="searching_for_printers">Searching for printers&#8230;</string>
+    <string name="wrong_firmware">Printer is not set up as a PDF Virtual Device</string>
+
+    <string name="selected_a_pdf">Selected a PDF</string>
+    <string name="no_pdf_selected">No PDF selected</string>
+    <string name="pdf_name">PDF name:</string>
+    <string name="select_pdf">Select PDF</string>
+    <string name="file_path">File path:</string>
+    <string name="file_not_saved">Unable to print a file that\'s not saved on the device</string>
+    <string name="file_access_error">Unable to access that file</string>
+
+
+    <string name="print">Print</string>
+    <string name="print_failed">Print Failed:</string>
+    <string name="print_successful">File sent to printer</string>
+    <string name="printer_paused">Printer is paused</string>
+    <string name="head_open">Printer head is open</string>
+    <string name="paper_out">Printer paper is out</string>
+    <string name="cannot_print">Cannot send file to printer</string>
+    <string name="no_printer">Cannot connect to printer</string>
+    <string name="sent_to_printer">Printing...</string>
+    <string name="ready_to_print">Ready to Print</string>
+    <string name="no_zpl">Unable to change printer language to ZPL</string>
+    <string name="unable_to_print">Unable to Print</string>
+    <string name="print_succeeded">Print successful</string>
+
+</resources>
