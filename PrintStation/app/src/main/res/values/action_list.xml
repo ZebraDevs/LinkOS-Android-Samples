@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="actionList">
+        <item>10.3.4.1</item>
+        <item>10.3.4.2</item>
+        <item>10.3.4.3</item>
+        <item>10.3.4.4</item>
+    </array>
+
+</resources>

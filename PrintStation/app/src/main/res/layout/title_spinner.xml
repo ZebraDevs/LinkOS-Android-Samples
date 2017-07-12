@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/RelativeLayout1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="fill_horizontal"
+android:orientation="vertical" >
+
+<TextView
+    android:id="@+id/TitleSpinner1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="-4dip"
+    android:text="ZBR202592030"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>

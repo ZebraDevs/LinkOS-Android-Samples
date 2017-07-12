@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/discoveryList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/emptyDiscoveryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/searchingSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center|center_vertical"
+            android:indeterminate="true"/>
+
+        <TextView
+            android:id="@+id/emptyDiscovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/searchingSpinner"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center|center_vertical"
+            android:singleLine="true"
+            android:text="No Printers Found"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/refreshPrintersButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/refresh" />
+    </RelativeLayout>
+
+</RelativeLayout>

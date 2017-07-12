@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 12
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        applicationId "com.zebra.kdu"
+        minSdkVersion 12
+        targetSdkVersion 12
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}
+
+dependencies {
+    compile files('libs/commons-io-2.2.jar')
+    compile files('libs/commons-lang3-3.4.jar')
+    compile files('libs/commons-net-3.1.jar')
+    compile files('libs/commons-validator-1.4.0.jar')
+    compile files('libs/core-1.53.0.0.jar')
+    compile files('libs/httpcore-4.3.1.jar')
+    compile files('libs/httpmime-4.3.2.jar')
+    compile files('libs/jackson-annotations-2.2.3.jar')
+    compile files('libs/jackson-core-2.2.3.jar')
+    compile files('libs/jackson-databind-2.2.3.jar')
+    compile files('libs/opencsv-2.2.jar')
+    compile files('libs/pkix-1.53.0.0.jar')
+    compile files('libs/prov-1.53.0.0.jar')
+    compile files('libs/snmp6_1.jar')
+    compile files('libs/ZSDK_ANDROID_API.jar')
+    compile files('libs/ZXingAndroid.jar')
+}

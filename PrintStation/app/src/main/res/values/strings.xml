@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Print Station</string>
+    <string name="zebra_logo">Zebra Logo</string>
+    <string name="app_name_line_1">Print</string>
+    <string name="app_name_line_2">Station</string>
+
+</resources>

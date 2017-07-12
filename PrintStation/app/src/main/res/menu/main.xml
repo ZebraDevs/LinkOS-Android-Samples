@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_printer"
+        android:actionLayout="@layout/custom_action_bar"
+        android:showAsAction="always"
+        android:title="Printer"/>
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/refresh"
+        android:showAsAction="never"
+        android:title="Refresh Formats"/>
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:showAsAction="never"
+        android:title="About..."/>
+
+</menu>

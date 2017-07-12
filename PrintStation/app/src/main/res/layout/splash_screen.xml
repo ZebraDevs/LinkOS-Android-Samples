@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/zebraLogo"
+        android:layout_width="113dp"
+        android:layout_height="158dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/zebravert" 
+        android:contentDescription="@string/zebra_logo"/>
+
+    <TextView
+        android:id="@+id/productNameLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name_line_1"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/productNameLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/app_name_line_2"
+        android:textSize="30sp"/>
+
+</LinearLayout>

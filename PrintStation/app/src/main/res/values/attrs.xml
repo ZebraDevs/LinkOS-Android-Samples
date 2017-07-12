@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="font" format="string"/>
+
+    <declare-styleable name="com.zebra.kdu.util.FontableTextView">
+        <attr name="font" />
+    </declare-styleable>
+    <declare-styleable name="com.zebra.kdu.util.FontableButton">
+        <attr name="font" />
+    </declare-styleable>
+</resources>

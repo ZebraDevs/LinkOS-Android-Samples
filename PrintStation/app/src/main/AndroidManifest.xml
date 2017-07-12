@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zebra.kdu"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk android:minSdkVersion="12" 
+        android:targetSdkVersion="12"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc"
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.usb.host" 
+        android:required="false"/>
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false"/>
+    
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppStyle" >
+        
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme= "@style/SplashStyle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ChooseFormatScreen" 
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            tools:ignore="ExportedActivity" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+			<intent-filter>
+  				<action android:name="android.nfc.action.NDEF_DISCOVERED" /> 
+  				<category android:name="android.intent.category.DEFAULT" /> 
+  				<data android:scheme="http"
+            		android:host="zebra.com"
+            		android:path="/apps/r/nfc" />
+				<data android:scheme="http"
+            		android:host="www.zebra.com"
+            		android:path="/apps/r/nfc" />
+  			</intent-filter>
+        	
+        	<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="zebra.com"
+                    android:pathPrefix="/apps/r/nfc"
+                    android:scheme="http" />
+                <data
+                    android:host="www.zebra.com"
+                    android:pathPrefix="/apps/r/nfc"
+                    android:scheme="http" />
+            </intent-filter>
+            
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name=".VariablesScreen"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        <activity android:name=".ChoosePrinterScreen" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+    </application>
+
+</manifest>
