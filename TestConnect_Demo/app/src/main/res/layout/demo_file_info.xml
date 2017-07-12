@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/printer_info_table_row_vertical_padding"
+        android:paddingTop="@dimen/printer_info_table_row_vertical_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/print_demo_info_table_margin"
+            android:text="@string/file_size"
+            android:textAllCaps="true"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/fileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/price_tag_file_size"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/printer_info_table_row_vertical_padding"
+        android:paddingTop="@dimen/printer_info_table_row_vertical_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dimensions"
+            android:textAllCaps="true"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/dimensions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/price_tag_dimensions"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/printer_info_table_row_vertical_padding"
+        android:paddingTop="@dimen/printer_info_table_row_vertical_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/print_demo_info_table_margin"
+            android:text="@string/print_mode"
+            android:textAllCaps="true"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/printMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/price_tag_print_mode"
+            android:textStyle="bold" />
+    </TableRow>
+
+</TableLayout>

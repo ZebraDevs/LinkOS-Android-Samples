@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/std_container_margin"
+    android:background="@android:color/white"
+    android:elevation="@dimen/std_container_elevation"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/printDemoList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/zebra_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/printButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/std_container_margin"
+            android:layout_weight="0.5"
+            android:enabled="true"
+            android:text="@string/button_print" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zebra_blue">#00769F</color>
+    <color name="near_black">#222222</color>
+    <color name="very_light_gray">#EEEEEE</color>
+    <color name="lighter_gray">#AAAAAA</color>
+    <color name="light_gray">#888888</color>
+    <color name="gray">#555555</color>
+
+    <color name="white_80pc_transparent">#CCFFFFFF</color><!-- Standard Android icon color and opacity against dark background -->
+
+    <color name="text_default">@color/near_black</color>
+    <color name="disabled_text_color">#CCCCCC</color>
+
+    <color name="printer_circle_gradient_edge">#BBBBBB</color>
+    <color name="printer_circle_gradient_center">#EEEEEE</color>
+
+    <color name="item_detail_background">#E6E6E6</color>
+</resources>

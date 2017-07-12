@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/connectedPrinter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_container_margin"
+    android:layout_marginLeft="@dimen/std_container_margin"
+    android:layout_marginRight="@dimen/std_container_margin"
+    android:layout_marginTop="@dimen/small_container_margin"
+    android:background="@android:color/white"
+    android:elevation="@dimen/std_container_elevation"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/refreshButton"
+        android:layout_width="@dimen/printer_status_indicator_size"
+        android:layout_height="@dimen/printer_status_indicator_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/printer_status_refresh_icon_margin"
+        android:src="@drawable/icon_refresh_blue"
+        android:contentDescription="@string/refresh_printer_status_icon_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/printer_background_size"
+            android:layout_height="@dimen/printer_background_size"
+            android:layout_margin="@dimen/printer_info_image_padding">
+
+            <com.zebra.testconnect.PrinterBackgroundView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/dashboardPrinterImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/zebra_default"
+                android:contentDescription="@string/connected_printer_icon_content" />
+
+            <FrameLayout
+                android:layout_width="@dimen/printer_status_indicator_size"
+                android:layout_height="@dimen/printer_status_indicator_size"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/indicator_white_circle">
+
+                <ImageView
+                    android:id="@+id/dashboardPrinterStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_checkmark_green"
+                    android:contentDescription="@string/print_status_icon_content" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dashboardFriendlyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh_dashboard"
+            android:textSize="@dimen/dashboard_printer_name_text_size"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/printer_info_image_padding" />
+
+    </LinearLayout>
+</RelativeLayout>

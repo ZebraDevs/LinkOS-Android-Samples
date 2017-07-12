@@ -1,0 +1,92 @@
+[
+    {
+        "itemList": [
+            {
+                "price": "$799.49",
+                "description": "Washer",
+                "upc": "123456789"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$3.79",
+                "description": "Milk",
+                "upc": "012345678"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$89.50",
+                "description": "MP3 Player",
+                "upc": "234567890"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$2.99",
+                "description": "Soap",
+                "upc": "345678901"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$59.00",
+                "description": "Dog Food",
+                "upc": "456789012"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$8.27",
+                "description": "Spinner",
+                "upc": "678912345"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$9.00",
+                "description": "Sinker",
+                "upc": "789123456"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$699.99",
+                "description": "Boat",
+                "upc": "891234567"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$123.00",
+                "description": "Anchor",
+                "upc": "912345678"
+            }
+        ]
+    },
+    {
+        "itemList": [
+            {
+                "price": "$1.99",
+                "description": "Soda",
+                "upc": "111111111"
+            }
+        ]
+    }
+]

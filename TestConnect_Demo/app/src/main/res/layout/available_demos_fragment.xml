@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/availableDemosFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/std_container_margin"
+    android:layout_marginLeft="@dimen/std_container_margin"
+    android:layout_marginRight="@dimen/std_container_margin"
+    android:layout_marginTop="@dimen/small_container_margin"
+    android:background="@android:color/white"
+    android:elevation="@dimen/std_container_elevation"
+    android:orientation="vertical"
+    android:tag="available_demos_fragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/available_demos"
+        android:textAllCaps="true"
+        android:textColor="@color/zebra_blue"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/std_title_padding"
+        android:paddingTop="@dimen/std_title_padding"
+        android:paddingRight="@dimen/std_title_padding"
+        android:paddingBottom="@dimen/std_title_padding_bottom" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/zebra_blue" />
+
+    <LinearLayout
+        android:id="@+id/printPriceTagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/print_demo_row_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/print_demo_icon_size"
+                android:layout_height="@dimen/print_demo_icon_size"
+                android:layout_margin="@dimen/print_demo_icon_margin"
+                android:src="@drawable/icon_price_tag_blue"
+                android:contentDescription="@string/print_demo_icon_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/shelf_label_demo"
+                android:textSize="@dimen/print_demo_info_header"
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:layout_width="@dimen/print_demo_icon_size"
+                android:layout_height="@dimen/print_demo_icon_size"
+                android:layout_margin="@dimen/print_demo_icon_margin"
+                android:src="@drawable/icon_chevron_right_blue"
+                android:contentDescription="@string/chevron_right_content" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/priceTagFileInfo"
+            layout="@layout/price_tag_file_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/print_demo_row_height"
+            android:layout_marginBottom="@dimen/print_demo_icon_margin"
+            android:layout_marginRight="@dimen/print_demo_icon_margin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lighter_gray" />
+
+    <LinearLayout
+        android:id="@+id/printReceiptLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/print_demo_row_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/print_demo_icon_size"
+                android:layout_height="@dimen/print_demo_icon_size"
+                android:layout_margin="@dimen/print_demo_icon_margin"
+                android:src="@drawable/icon_file"
+                android:contentDescription="@string/file_icon_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/receipt_demo"
+                android:textSize="@dimen/print_demo_info_header"
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:layout_width="@dimen/print_demo_icon_size"
+                android:layout_height="@dimen/print_demo_icon_size"
+                android:layout_margin="@dimen/print_demo_icon_margin"
+                android:src="@drawable/icon_chevron_right_blue"
+                android:contentDescription="@string/chevron_right_content" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/receiptFileInfo"
+            layout="@layout/receipt_file_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/print_demo_row_height"
+            android:layout_marginBottom="@dimen/print_demo_icon_margin"
+            android:layout_marginRight="@dimen/print_demo_icon_margin" />
+
+    </LinearLayout>
+
+</LinearLayout>

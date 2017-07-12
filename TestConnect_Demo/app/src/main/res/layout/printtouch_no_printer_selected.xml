@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/usePrintTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/use_print_touch"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/printTouchDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/print_touch_description"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/learnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/std_container_margin"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="@string/learn_more"
+            android:textColor="@color/zebra_blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/printTouchImage"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/icon_printtouch"
+        android:contentDescription="@string/print_touch_icon_content" />
+
+</LinearLayout>

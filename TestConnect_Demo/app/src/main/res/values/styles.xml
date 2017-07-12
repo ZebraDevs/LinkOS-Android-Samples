@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="android:statusBarColor">@color/gray</item>
+    </style>
+
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/light_gray</item>
+        <item name="background">@color/light_gray</item>
+    </style>
+</resources>

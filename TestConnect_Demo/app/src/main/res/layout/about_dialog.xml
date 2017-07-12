@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="81dp"
+        android:layout_height="126dp"
+        android:id="@+id/aboutZebraLogo"
+        android:src="@drawable/zebra_logo_stacked"
+        android:layout_margin="@dimen/std_dialog_padding"
+        android:contentDescription="@string/zebra_logo_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_bar_width_thin"
+        android:background="@color/lighter_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/std_dialog_padding"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/about_app_name"
+            android:id="@+id/aboutAppName"
+            android:textSize="@dimen/about_dialog_app_name"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:ellipsize="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/appVersion"
+            android:text="@string/version_unknown"
+            android:textSize="@dimen/about_dialog_text"
+            android:ellipsize="end"
+            android:textColor="@color/light_gray"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_copyright_string"
+            android:textSize="@dimen/about_dialog_text"
+            android:textColor="@color/light_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_source_licenses"
+            android:textSize="@dimen/about_dialog_text"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:textColor="@color/zebra_blue"
+            android:id="@+id/openSourceLicenses"
+            android:layout_marginTop="@dimen/std_dialog_spacing"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

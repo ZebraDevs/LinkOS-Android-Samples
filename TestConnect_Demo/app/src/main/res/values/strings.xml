@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">TestConnect</string>
+    <string name="print_connect_not_installed">Required app missing</string>
+    <string name="print_connect_installed">Zebra PrintConnect is installed!</string>
+    <string name="print_connect_not_installed_info">This application requires that Zebra PrintConnect is installed in order to work.</string>
+    <string name="available_demos">Available Demos</string>
+    <string name="shelf_label_demo">Print a Shelf Label</string>
+    <string name="receipt_demo">Print a Receipt</string>
+    <string name="file_size">File Size</string>
+    <string name="dimensions">Dimensions</string>
+    <string name="print_mode">Print Mode</string>
+    <string name="no_printer_selected">No printer selected</string>
+    <string name="use_print_touch">To Use Print Touch&#44;</string>
+    <string name="print_touch_description">bump and pair an NFC-enabled device with a supported Zebra printer</string>
+    <string name="learn_more">LEARN MORE &#187;</string>
+    <string name="friendly_name_default">Friendly name of printer</string>
+
+    <string name="price_tag_file_size">1.3 MB</string>
+    <string name="price_tag_dimensions">3\&quot; x 1\&quot; (7.62cm x 2.54cm)</string>
+    <string name="price_tag_print_mode">ZPL</string>
+    <string name="receipt_file_size">891 KB</string>
+    <string name="receipt_dimensions">2\&quot; wide (5.08cm wide)</string>
+    <string name="receipt_print_mode">Line Mode</string>
+
+    <string name="about_app_name">Zebra TestConnect<sup><small>&#169;</small></sup></string>
+    <string name="version">Version %s</string>
+    <string name="about_copyright_string">&#169; 2015 ZIH Corp.</string>
+    <string name="open_source_licenses">Open source licenses</string>
+
+    <string name="dismiss">Dismiss</string>
+    <string name="cancel">Cancel</string>
+    <string name="print">Print</string>
+    <string name="print_job">Print job</string>
+    <string name="template_file">Template file</string>
+    <string name="template_files">Template files</string>
+    <string name="selected_printer">Selected printer</string>
+
+    <string name="shelf_label_demo_header">Shelf Label Template</string>
+    <string name="receipt_demo_header">Receipt Template</string>
+
+    <string name="description">Description</string>
+    <string name="demo_shelf_label_description">A sample shelf label template that uses ZPL mode, along with variable data.</string>
+    <string name="demo_receipt_description">A sample receipt that uses multiple templates to print a receipt header, lines, and footer.  This allows for a variable length receipt on continuous media.</string>
+    <string name="demo_variables">Variables</string>
+
+    <string name="button_print">Print</string>
+
+    <string name="printing_template">Printing Template</string>
+    <string name="sending_data">Sending data via intent</string>
+
+    <string name="receipt_header_template_name">Receipt_Header.prn</string>
+    <string name="receipt_line_template_name">Receipt_Line.prn</string>
+    <string name="receipt_footer_template_name">Receipt_Footer.prn</string>
+    <string name="shelf_label_template_name">Label.prn</string>
+
+    <string name="intent_result_error_message">Error message:&#160;</string>
+    <string name="intent_name">Intent:&#160;</string>
+    <string name="intent_var_data">Variable Data:&#160;</string>
+
+    <string name="item_number">Item</string>
+    <string name="item_summary">%1$s at %2$s</string>
+
+    <string name="sending_intent">Sending</string>
+    <string name="error_sending_intent">Error sending</string>
+    <string name="sent_intent">Sent</string>
+
+    <string name="version_unknown">Version unknown</string>
+    <string name="no_template_selected">No template selected</string>
+    <string name="refresh_dashboard">Please refresh the dashboard</string>
+    <string name="about">About</string>
+    <string name="sent">SENT</string>
+    <string name="response">RESPONSE</string>
+    <string name="result_code">Result code: </string>
+
+    <!-- Image description strings-->
+    <string name="zebra_logo_content">Zebra logo</string>
+    <string name="print_demo_icon_content">Icon representing print demo type</string>
+    <string name="chevron_right_content">Chevron right icon</string>
+    <string name="file_icon_content">A file icon</string>
+    <string name="refresh_printer_status_icon_content">Click to refresh printer info.</string>
+    <string name="connected_printer_icon_content">Icon indicating a printer has been connected.</string>
+    <string name="print_status_icon_content">Ready to print indicator icon</string>
+    <string name="refresh_variable_content">Click to refresh variable data</string>
+    <string name="no_printer_selected_icon_content">Icon indicating that no printer is selected</string>
+    <string name="print_connect_installed_icon_content">Icon indicating that PrintConnect is installed</string>
+    <string name="print_connect_not_installed_icon_content">Icon indicating that PrintConnect is not installed</string>
+    <string name="print_result_status_icon_content">Icon indicator of print result status</string>
+    <string name="print_result_chevron_content">Icon for expansion of print result list item</string>
+    <string name="print_touch_icon_content">Icon prompting user to bump to connect</string>
+    <string name="testconnect_icon_content">TestConnect icon displayed when PrintConnect is not installed</string>
+
+    <!-- Print Demo Receipt strings -->
+    <string name="sample_receipt">Sample Receipt</string>
+    <string name="sample_street_name">555 S Anystreet</string>
+    <string name="sample_city_state">Austin, TX 70745</string>
+    <string name="sample_phone_number">555-555-5555</string>
+    <string name="sample_store_number">Store #2</string>
+
+    <!-- Intent Result Codes -->
+    <string name="intent_result_success">Success</string>
+    <string name="intent_result_no_printer_selected">No printer selected</string>
+    <string name="intent_result_connection_error">Connection error</string>
+    <string name="intent_result_template_read_error">Template read error</string>
+    <string name="intent_result_unrecoverable_error">Unrecoverable error</string>
+    <string name="intent_result_graphic_read_error">Graphic read error</string>
+    <string name="intent_result_illegal_argument">Illegal argument error</string>
+    <string name="intent_result_cloud_file_error">Cloud file access error</string>
+
+
+    <!-- URI strings -->
+    <string name="print_touch_uri">https://www.zebra.com/us/en/products/software/barcode-printers/link-os/print-touch.html</string>
+    <string name="open_source_license_uri">http://www.zebra.com/linkos-legal</string>
+</resources>

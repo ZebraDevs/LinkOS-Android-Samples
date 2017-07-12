@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/std_dialog_padding">
+
+    <TextView
+        android:id="@+id/templateFileHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/template_file"
+        android:textSize="@dimen/print_dialog_header_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/templateFileValue"
+        android:textSize="@dimen/print_dialog_value_text"
+        android:textStyle="bold"
+        android:text="@string/no_template_selected"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_printer"
+        android:textSize="@dimen/print_dialog_header_text"
+        android:layout_marginTop="@dimen/std_dialog_padding" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectedPrinterValue"
+        android:textSize="@dimen/print_dialog_value_text"
+        android:textStyle="bold"
+        android:text="@string/no_printer_selected" />
+</LinearLayout>

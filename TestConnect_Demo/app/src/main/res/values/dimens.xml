@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_bar_width">3dp</dimen>
+    <dimen name="horizontal_bar_width_thin">1px</dimen>
+    <dimen name="std_container_elevation">2dp</dimen>
+
+    <dimen name="small_container_margin">4dp</dimen>
+    <dimen name="std_container_margin">8dp</dimen>
+    <dimen name="large_container_margin">12dp</dimen>
+    <dimen name="extra_large_container_margin">20dp</dimen>
+
+    <dimen name="std_row_height">64dp</dimen>
+    <dimen name="std_icon_size">32dp</dimen>
+    <!-- std_icon_margin = (std_row_height - std_icon_size) / 2 -->
+    <dimen name="std_icon_margin">16dp</dimen>
+
+    <dimen name="print_demo_row_height">56dp</dimen>
+    <dimen name="print_demo_icon_size">32dp</dimen>
+    <!-- demo_icon_margin = (demo_row_height - demo_icon_size) / 2 -->
+    <dimen name="print_demo_icon_margin">12dp</dimen>
+    <dimen name="print_demo_info_header">18sp</dimen>
+    <dimen name="print_demo_info_text">14sp</dimen>
+    <dimen name="print_demo_info_table_margin">16dp</dimen>
+
+    <dimen name="std_dialog_padding">24dp</dimen>
+    <dimen name="std_dialog_spacing">12dp</dimen>
+    <dimen name="std_text_space_margin">5sp</dimen>
+
+    <dimen name="print_dialog_header_text">16sp</dimen>
+    <dimen name="print_dialog_value_text">18sp</dimen>
+
+    <dimen name="about_dialog_app_name">20sp</dimen>
+    <dimen name="about_dialog_text">13sp</dimen>
+
+    <dimen name="connected_dialog_printer_info">18sp</dimen>
+
+    <dimen name="printer_info_image_padding">16dp</dimen>
+    <dimen name="printer_info_table_row_vertical_padding">1dp</dimen>
+
+    <dimen name="printer_background_size">108dp</dimen>
+    <dimen name="printer_status_indicator_size">32dp</dimen>
+
+    <dimen name="dashboard_printer_name_text_size">20sp</dimen>
+
+    <dimen name="std_title_padding">20dp</dimen>
+    <dimen name="std_title_padding_bottom">8dp</dimen>
+
+    <dimen name="printer_status_refresh_icon_margin">6dp</dimen>
+</resources>

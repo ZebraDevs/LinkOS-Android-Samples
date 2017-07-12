@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="@dimen/std_container_elevation"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/noPrinterSelectedIcon"
+        android:layout_width="@dimen/std_icon_size"
+        android:layout_height="@dimen/std_icon_size"
+        android:layout_margin="@dimen/std_icon_margin"
+        android:src="@drawable/icon_error_stop"
+        android:contentDescription="@string/no_printer_selected_icon_content" />
+
+    <TextView
+        android:id="@+id/noPrinterSelectedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/std_icon_margin"
+        android:layout_marginRight="@dimen/std_icon_margin"
+        android:layout_marginTop="@dimen/std_icon_margin"
+        android:text="@string/no_printer_selected"
+        android:textColor="@color/zebra_blue"
+        android:textStyle="bold" />
+
+</LinearLayout>
