@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:gravity="center_horizontal"
+	android:layout_height="fill_parent">
+
+	
+	<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+		<TableRow 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+    
+				<EditText
+					android:id="@+id/set_var_input"
+					android:layout_width="200sp"
+					android:layout_height="wrap_content"
+					android:singleLine = "true"
+					android:inputType="textNoSuggestions|text"
+					android:hint="Enter Variable Name"
+					android:layout_weight="1" />
+				<EditText
+					android:id="@+id/set_var_value"
+					android:layout_width="100sp"
+					android:layout_height="wrap_content"
+					android:singleLine = "true"
+					android:inputType="textNoSuggestions|text"
+					android:hint=" Value "
+					android:layout_weight="1" />
+	
+			<Button 
+				android:id="@+id/set_var_button"
+				android:layout_width="50sp"
+				android:layout_height="wrap_content"
+				android:text="Set"/>
+            
+		</TableRow>
+	
+		<TableRow 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+			
+				<EditText
+					android:id="@+id/get_var_input"
+					android:layout_width="200sp"
+					android:layout_height="wrap_content"
+					android:singleLine = "true"
+					android:inputType="textNoSuggestions|text"
+					android:hint="Enter Variable Name"
+					android:layout_weight="1" />
+				<EditText
+					android:id="@+id/get_var_value"
+					android:layout_width="100sp"
+					android:layout_height="wrap_content"
+					android:singleLine = "true"
+					android:enabled="false"
+					android:inputType="textNoSuggestions|text"
+					android:hint=" Value "
+					android:layout_weight="1" />
+			
+			<Button android:id="@+id/get_var_button"
+				android:layout_width="60sp"
+				android:layout_height="wrap_content"
+				android:text="Get" />
+				
+        </TableRow>
+	
+		<Button
+			android:id="@+id/send_allcv_button"
+			android:text="Send allcv command"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+			
+	</TableLayout>
+	
+	<ListView
+		android:id="@+id/statusList"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/>
+
+</LinearLayout>
