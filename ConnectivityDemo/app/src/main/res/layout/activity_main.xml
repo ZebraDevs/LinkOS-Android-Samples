@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".MainActivity"
+    android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="@dimen/scroll_view_bottom"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:id="@+id/zebraHeader"
+                android:padding="@dimen/margin_default"
+                android:background="@android:color/white"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:elevation="@dimen/elevation_default">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/zebralogo"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/zebraLogo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/zebraLogo"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zebra_technologies_corp"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zebra_address_line_1"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/launchpad_link"
+                        android:text="@string/zebra_address_line_2"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/zebra_blue"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ipDnsRadio"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:text="IP/DNS"
+                        android:checked="true" />
+                    <RadioButton
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/bluetoothRadio"
+                        android:textSize="18dp"
+                        android:text="Bluetooth (R)" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ipAddressText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ip Address:"
+                        android:textSize="18.0sp"
+                        android:layout_weight="1" />
+                    <EditText
+                        android:id="@+id/ipAddressInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textNoSuggestions|text"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small">
+                    <TextView
+                        android:id="@+id/portText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18.0sp"
+                        android:text="Port:"
+                        android:layout_weight="1" />
+                    <EditText
+                        android:id="@+id/portInput"
+                        android:text="9100"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:inputType="number"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_marginBottom="@dimen/margin_small">
+                    <TextView
+                        android:id="@+id/macAddressText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18.0sp"
+                        android:text="MAC Address:"
+                        android:layout_weight="1" />
+                    <EditText
+                        android:id="@+id/macInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="textNoSuggestions|text"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status: Not Connected"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="18.0sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:elevation="@dimen/elevation_default">
+
+                <Button
+                    android:id="@+id/testButton"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:textStyle="bold"
+                    android:text="Test"
+                    android:textColor="@color/zebra_blue"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedPrinterFragmentContainer"
+            android:layout_alignParentTop="true" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/selectedPrinterFragmentContainer">
+
+            <ImageView
+                android:layout_width="139dp"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/std_container_margin"
+                android:src="@drawable/zebra_logo_black"
+                android:id="@+id/zebraFooterLogo" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+

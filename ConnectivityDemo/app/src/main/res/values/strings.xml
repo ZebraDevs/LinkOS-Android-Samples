@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ConnectivityDemo</string>
+
+    <string name="action_settings">Add a Printer</string>
+
+    <string name="zebra_technologies_corp">Zebra Technologies Corp.</string>
+    <string name="zebra_address_line_1"><b>ISV TEAM</b>, Lincolnshire IL, 60069.</string>
+    <string name="zebra_address_line_2">Visit <a href="https://developer.motorolasolutions.com/welcome">developer.zebra.com</a> for more support.</string>
+
+
+    <string name="print">Print</string>
+    <string name="cancel">Cancel</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+    <string name="printer_status">Printer Status</string>
+    <string name="rotation_prompt">Choose a rotation</string>
+    <string name="image_selection">Select an Image</string>
+
+    <string name="store_check">Check to store on printer</string>
+    <string name="path_hint">Path to store on printer</string>
+    <string name="printer_selection">Select a Printer</string>
+    <string name="discovered_printers">Discovered printers</string>
+    <string name="searching_for_printers">Searching for printers&#8230;</string>
+    <string name="connecting_to_printer">Connecting to printer&#8230;</string>
+    <string name="printer_connected">Printer connected</string>
+    <string name="printer_connection_failed">Printer connection failed</string>
+    <string name="connected_to_printer">Connected to printer:</string>
+    <string name="connection_error">Connection error</string>
+    <string name="print_successful">Print successful</string>
+    <string name="print_failed">Print failed:</string>
+    <string name="printer_paused">Printer paused</string>
+    <string name="head_open">Head open</string>
+    <string name="paper_out">Paper out</string>
+    <string name="cannot_print">Cannot print</string>
+    <string name="no_printers_found">No printers found</string>
+
+
+</resources>
