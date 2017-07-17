@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+
+    <dimen name="elevation_default">2dp</dimen>
+    <dimen name="elevation_large">5dp</dimen>
+    <dimen name="drawer_row_height">48dp</dimen>
+
+    <dimen name="row_height_default">48dp</dimen>
+    <dimen name="row_icon_margin">6dp</dimen>
+    <dimen name="std_container_margin">8dp</dimen>
+
+    <dimen name="get_width">550dp</dimen>
+    <dimen name="get_height">412dp</dimen>
+
+    <dimen name="circle_button_size">72dp</dimen>
+    <dimen name="scroll_view_bottom">88dp</dimen>
+    <dimen name="product_text">18dp</dimen>
+</resources>
