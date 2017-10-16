@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tap Scan Bluetooth Wifi</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_clear">Clear</string>
+
+    <string name="MainActivity_PairedDevices">Bluetooth Paired Devices</string>
+    <string name="MainActivity_TapToPair">Tap or Scan to Pair</string>
+    <string name="MainActivity_AttemptToPair">Attempting to pair with\n %s</string>
+    <string name="MainActivity_PairSuccessful">Successfully paired with %s</string>
+    <string name="MainActivity_BtPairingMessage">Attempting to pair with </string>
+    <string name="MainActivity_PairComplete">Pairing Complete</string>
+    <string name="MainActivity_PrintPrompt">Are you sure you want to print a test page?</string>
+    <string name="MainActivity_AlreadyPaired">%s is already paired</string>
+    <string name="MainActivity_PrintTestPage">Click to print test label</string>
+</resources>

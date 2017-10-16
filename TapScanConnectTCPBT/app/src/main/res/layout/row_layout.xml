@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/MainActivity_TapToPair"
+        android:id="@+id/tvDeviceName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/MainActivity_TapToPair"
+        android:id="@+id/tvDeviceAddress"
+        android:layout_below="@+id/tvDeviceName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/MainActivity_PrintTestPage"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/tvDeviceAddress"
+        android:layout_alignParentRight="true"
+        android:textStyle="italic"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>
