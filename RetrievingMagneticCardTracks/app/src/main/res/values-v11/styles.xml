@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="ErrorButtonAppearance" parent= "Theme.AppCompat.Light.Dialog">
+<item name="android:textStyle">bold</item>
+<item name="android:textSize">16dp</item>
+<item name="android:textColor">@color/error_color</item>
+</style>
+<style name="ButtonAppearance" parent="Theme.AppCompat.Light.Dialog">
+<item name="android:textStyle">bold</item>
+<item name="android:textSize">16dp</item>
+<item name="android:textColor">@color/zebra_blue</item>
+</style>
+    </resources>
