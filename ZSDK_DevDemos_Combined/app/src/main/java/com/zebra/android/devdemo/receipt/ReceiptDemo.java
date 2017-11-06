@@ -50,10 +50,10 @@ public class ReceiptDemo extends ConnectionScreen {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        testButton.setText("Print As One Job");
+        testButton.setText("Print Using One Job");
 
         Button printAsManyJobsButton = new Button(this);
-        printAsManyJobsButton.setText("Print As many Jobs");
+        printAsManyJobsButton.setText("Print Using Multiple Jobs");
 
         LinearLayout connection_screen_layout = (LinearLayout) findViewById(R.id.connection_screen_layout);
         int index = connection_screen_layout.indexOfChild(testButton);

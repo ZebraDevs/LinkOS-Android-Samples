@@ -57,10 +57,12 @@ public class StatusChannelDemo extends ConnectionScreen {
 
     @Override
     public void performSecondTest() {
+        final UIHelper helper = new UIHelper(this);
         String macAddress = getMacAddressFieldText();
         final HashSet<ConnectionChannel> channels = new HashSet<ConnectionChannel>();
         final Context context = this;
         SettingsHelper.saveBluetoothAddress(context, macAddress);
+        helper.showLoadingDialog("Finding available channels");
         try {
             BluetoothDiscoverer.findServices(this, macAddress, new ServiceDiscoveryHandler() {
 
@@ -71,6 +73,7 @@ public class StatusChannelDemo extends ConnectionScreen {
                             availableChannelString += c.toString() + "\n";
                         }
                     }
+                    helper.dismissLoadingDialog();
                     Toast.makeText(context, "Available channels:\n" + availableChannelString, Toast.LENGTH_LONG).show();
                 }
 
@@ -81,9 +84,8 @@ public class StatusChannelDemo extends ConnectionScreen {
             });
 
         } catch (IllegalArgumentException e) {
-            UIHelper helper = new UIHelper(this);
+            helper.dismissLoadingDialog();
             helper.showErrorDialogOnGuiThread(e.getMessage());
-
         }
     }
 }

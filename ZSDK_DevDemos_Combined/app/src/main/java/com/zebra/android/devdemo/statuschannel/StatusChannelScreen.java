@@ -59,6 +59,7 @@ public class StatusChannelScreen extends Activity {
         new Thread(new Runnable() {
 
             public void run() {
+                helper.showLoadingDialog("Getting printer status");
                 saveSettings();
                 getStatus();
             }
@@ -97,12 +98,11 @@ public class StatusChannelScreen extends Activity {
                     statusMessageList.add("Is Printer Paused: " + myPrinterStatus.isPaused);
                     statusMessageList.add("Batch Labels Remaining: " + myPrinterStatus.labelsRemainingInBatch);
                     statusListAdapter.notifyDataSetChanged();
+                    helper.dismissLoadingDialog();
                 }
             });
-
-        } catch (ConnectionException e) {
-            helper.showErrorDialogOnGuiThread(e.getMessage());
         } catch (Exception e) {
+            helper.dismissLoadingDialog();
             helper.showErrorDialogOnGuiThread(e.getMessage());
         } finally {
             try {
