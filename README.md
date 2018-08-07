@@ -33,7 +33,7 @@
 
 
 # Notes
-All card printer sample code is selectable from the branches on this repository.
+All android printer sample code is selectable from the branches on this repository.
 
 This sample code is designed to work with the [Link-OS Multiplatform SDK](http://www.zebra.com/sdk).
 
