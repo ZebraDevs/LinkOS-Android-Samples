@@ -1,3 +1,48 @@
+# LinkOS-AndroidCard-Samples
+Java based sample code for developing card printing and encoding apps on Android. The demos in this repository are stored on separate branches. To navigate to a demo, please click branches.
+
+## Projects contained in this repository:
+[ConnectivityDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/ConnectivityDemo)
+
+[DefaultPrinterDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/DefaultPrinterDemo)
+
+[DeterminePrinterLanguageAndStatus]( https://github.com/Zebra/LinkOS-Android-Samples/tree/DeterminePrinterLanguageAndStatus)
+
+[ListFormatsDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/ListFormatsDemo)
+
+[PDFPrint]( https://github.com/Zebra/LinkOS-Android-Samples/tree/PDFPrint)
+
+[PrintRotatedImage]( https://github.com/Zebra/LinkOS-Android-Samples/tree/PrintRotatedImage)
+
+[PrintStationrrr]( https://github.com/Zebra/LinkOS-Android-Samples/tree/PrintStation)
+
+[RetrievingMagneticCardTracks]( https://github.com/Zebra/LinkOS-Android-Samples/tree/RetrievingMagneticCardTracks)
+
+[SendFileDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/SendFileDemo)
+
+[SignatureCaptureDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/SetGetDoDemo)
+
+[SignatureCaptureDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/SignatureCaptureDemo)
+
+[TapScanConnectTCPBT]( https://github.com/Zebra/LinkOS-Android-Samples/tree/TapScanConnectTCPBT)
+
+[TestConnect_Demo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/TestConnect_Demo)
+
+[ZSDK_DevDemos_Combined]( https://github.com/Zebra/LinkOS-Android-Samples/tree/ZSDK_DevDemos_Combined)
+
+
+
+# Notes
+All card printer sample code is selectable from the branches on this repository.
+
+This sample code is designed to work with the [Link-OS Multiplatform SDK](http://www.zebra.com/sdk).
+
+Find [API Documentation](http://techdocs.zebra.com/link-os) here.
+
+[Developer Community](https://developer.zebra.com/community/technologies/printers) and Forums.
+
+---
+
 # LinkOS_SDK license
 ## END USER LICENSE AGREEMENT ##
 **(UNRESTRICTED SOFTWARE)** 
