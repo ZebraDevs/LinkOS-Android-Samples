@@ -1,5 +1,5 @@
-# LinkOS-Android-Samples
-
+# 520RFID_Demo_Softscan_Only
+A sample code app showing a sales demo to showcase scanning a UPC to then print and encode an RFID tag using a Zebra RFID printer. Tested primarily with the ZQ520R mobile printer.
 
 ## Projects contained in this repository:
 [ConnectivityDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/ConnectivityDemo)
