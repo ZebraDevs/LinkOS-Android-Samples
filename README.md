@@ -2,6 +2,10 @@
 
 
 ## Projects contained in this repository:
+[RFID UPC Scan to Encode](https://github.com/Zebra/LinkOS-Android-Samples/tree/520RFID_Android_Label_Tag)
+
+[RFID UPC Scan to Encode- Demo Version](https://github.com/Zebra/LinkOS-Android-Samples/tree/520RFID_Demo_Softscan_Only)
+
 [ConnectivityDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/ConnectivityDemo)
 
 [DefaultPrinterDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/DefaultPrinterDemo)
