@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/newEntryView" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_entry"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:background="@color/zebra_blue"
+        android:padding="@dimen/margin_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_default">
+
+            <LinearLayout
+                android:id="@+id/fieldsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/UPC_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="@string/UPC" />
+
+                <EditText
+                    android:id="@+id/UPC_Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="@string/Product_Name" />
+
+                <EditText
+                    android:id="@+id/productName_Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ProviderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="@string/Provider" />
+
+                <EditText
+                    android:id="@+id/provider_Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/PriceUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="@string/Price" />
+
+                <EditText
+                    android:id="@+id/priceItem_Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="Quantity" />
+
+                <EditText
+                    android:id="@+id/quantity_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="Discount" />
+
+                <EditText
+                    android:id="@+id/discount_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="Color" />
+
+                <EditText
+                    android:id="@+id/color_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="Style" />
+
+                <EditText
+                    android:id="@+id/style_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/size_ref"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="Size" />
+
+                <EditText
+                    android:id="@+id/size_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

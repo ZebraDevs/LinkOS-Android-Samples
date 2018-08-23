@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">RFID_SCAN Print Demo</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="zebra_technologies_corp">Zebra Technologies Corp.</string>
+    <string name="zebra_address_line_1">RFID Mobile Print Demo</string>
+    <string name="zebra_address_line_2">ISV Engineering Team 2018</string>
+
+    <string name="no_printer_selected">No printer selected</string>
+    <string name="printer_name">Printer name</string>
+    <string name="printer_address">Printer address</string>
+    <string name="connect">Discover &amp; Connect</string>
+
+    <string name="add_to_cart">RFID Item List:</string>
+    <string name="sign_here">Sign here:</string>
+    <string name="sign_and_print">Print \nRFID List</string>
+
+    <string name="print">Print</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="price">Price:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="product_1">Zebra TC55</string>
+    <string name="product_2">Charger</string>
+
+    <string name="discovered_printers">Discovered printers</string>
+    <string name="searching_for_printers">Searching for printers&#8230;</string>
+    <string name="connecting_to_printer">Connecting to printer&#8230;</string>
+    <string name="printer_connected">Printer connected</string>
+    <string name="printer_connection_failed">Printer connection failed</string>
+    <string name="connected_to_printer">Connected to printer:</string>
+    <string name="connection_error">Connection error</string>
+    <string name="print_successful">Print successful</string>
+    <string name="print_failed">Print failed:</string>
+    <string name="printer_paused">Printer paused</string>
+    <string name="head_open">Head open</string>
+    <string name="paper_out">Paper out</string>
+    <string name="cannot_print">Cannot print</string>
+    <string name="no_printers_found">No printers found</string>
+    <string name="Language_is_ZPL">Language is ZPL</string>
+    <string name="Language_is_CPCL">Language is CPCL</string>
+    <string name="Language_is_LINE_PRINT">Language is LINE_PRINT</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="Print_Price_Label">Print and Save Retail Label</string>
+    <string name="Print_RFID_Label">Print and Save RFID Label</string>
+    <string name="Print_RFID_List">Print \nRFID List</string>
+
+    <string name="new_entry">New Label Scanned</string>
+    <string name="export_data">Save Data to CSV File</string>
+    <string name="clear_data">Clear All Data</string>
+    <string name="email_data">Email CSV File</string>
+
+    <string name="barcode_data">Barcode Data:</string>
+    <string name="empty"></string>
+    <string name="notes1">Notes:</string>
+    <string name="notes2">Notes</string>
+    <string name="submit">Print Label</string>
+    <string name="no_scan">No data scanned yet</string>
+
+    <string name="UPC">UPC</string>
+    <string name="Product_Name">Product Name</string>
+    <string name="Provider">Provider</string>
+    <string name="Price">Price</string>
+    <string name="QTY">QTY</string>
+
+    <string name="discount">Discount</string>
+    <string name="color_item">Color</string>
+    <string name="style">Style</string>
+    <string name="size_ref">Size Ref</string>
+
+    <string name="save_files_to">Save exported files to:</string>
+    <string name="folder_error">ERROR: Invalid character(s) in folder name. Folder name may not
+        begin or end with a period or space, contain 2 consecutive periods, or contain any of the
+        following: []~{}:"?\/*@#%&amp;|&lt;&gt;
+    </string>
+    <string name="timestamp_new_files">Time and date stamp new files</string>
+    <string name="custom_data_entry">Custom data entry</string>
+    <string name="parse_data_strings">Attempt to parse scanned data</string>
+    <string name="suggested_delimiter">Suggested delimiter:</string>
+    <string name="configure_custom_data_entry">Configure Custom Data Entry</string>
+
+    <string name="database_fields">Database Fields</string>
+    <string name="enabled_error">ERROR: Custom data entry is currently turned off. If you would
+        like to use these fields, please make sure to turn it on.
+    </string>
+    <string name="country_and_email">Zebra Marketing requires that email addresses and countries
+        are gathered with any lead. Please ensure there are fields for these.
+    </string>
+    <string name="country_and_email2">Zebra Marketing requires that <i>email addresses and countries</i>
+        are gathered with any lead. Please ensure they are included somewhere in the scanned
+        barcode data or the Notes section.
+    </string>
+    <string name="country_and_email3">Zebra Marketing requires that <i>email addresses and countries</i>
+        are gathered with any lead. Please ensure they are included somewhere.
+    </string>
+    <string name="num_fields">Number of fields:</string>
+    <string name="checkBox_noScan">Yes, please contact me with more information</string>
+	
+</resources>

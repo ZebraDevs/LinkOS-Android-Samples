@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:background="@color/zebra_blue"
+        android:padding="@dimen/margin_default" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/label_height"
+        android:text="@string/save_files_to"
+        android:id="@+id/pathLabel"
+        android:gravity="left"
+        android:layout_margin="@dimen/margin_default">
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pathText"
+        android:text="NULL"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:textColor="@android:color/black"
+        android:gravity="left" />
+
+    <EditText
+        android:theme="@style/SingleLineEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NULL"
+        android:id="@+id/folderText"
+        android:gravity="left"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/folder_error"
+        android:id="@+id/errorText"
+        android:gravity="left"
+        android:layout_margin="@dimen/margin_default"
+        android:textColor="@color/zebra_red"
+        android:visibility="gone" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timestampNewFiles"
+        android:text="@string/timestamp_new_files"
+        android:checked="true"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_default"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customDataEntry"
+        android:text="@string/custom_data_entry"
+        android:checked="false"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_default" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parseDataStrings"
+        android:text="@string/parse_data_strings"
+        android:checked="false"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_default" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/suggestedDelimiter"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suggested_delimiter"
+            android:id="@+id/suggestedDelimiterText"
+            android:gravity="left"
+            android:layout_margin="@dimen/margin_default" />
+
+        <EditText
+            android:theme="@style/SingleLineEditText"
+            android:layout_width="@dimen/char_line_width"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/suggestedDelimiterText"
+            android:id="@+id/suggestedDelimiterInput" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/table_elevation">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/configCustomEntryButton"
+            android:text="@string/configure_custom_data_entry"
+            android:background="@color/zebra_blue"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_default"
+            android:elevation="@dimen/elevation_default"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

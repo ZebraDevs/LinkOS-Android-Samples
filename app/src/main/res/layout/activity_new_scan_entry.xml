@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/newEntryView" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_entry"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:background="@color/zebra_blue"
+        android:padding="@dimen/margin_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_height"
+                android:text="@string/barcode_data"
+                android:id="@+id/barcodeDataLabel"
+                android:gravity="left"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/barcode_data_height"
+                    android:id="@+id/barcodeDataText"
+                    android:gravity="left"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:background="@color/light_gray"
+                    android:hint="@string/no_scan"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/barcode_data_height"
+                    android:id="@+id/barcodeDataScroll"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/margin_default"
+                    android:layout_marginLeft="@dimen/margin_default"
+                    android:background="@color/light_gray">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/barcodeDataTable">
+
+                    </TableLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/label_height"
+                android:text="@string/notes1"
+                android:id="@+id/notesLabel"
+                android:gravity="left"
+                android:layout_margin="@dimen/margin_default"/>
+
+            <EditText
+                android:id="@+id/notesText"
+                android:layout_width="362dp"
+                android:layout_height="118dp"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:background="@color/light_gray"
+                android:gravity="left" />
+
+            <CheckBox
+                android:id="@+id/noBeContactedBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/checkBox_noScan" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:id="@+id/submitButton"
+                android:text="@string/submit"
+                android:background="@color/zebra_blue"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:elevation="@dimen/elevation_default"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/country_and_email2"
+                android:layout_margin="@dimen/margin_default"
+                android:gravity="bottom"
+                android:textColor="@color/near_black"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
