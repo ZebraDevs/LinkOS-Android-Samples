@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   >
+
+  <TextView
+      android:id="@+id/TextFirst"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.6"
+      android:text="UPC"
+      android:textSize="12sp" />
+
+  <TextView
+      android:id="@+id/TextSecond"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.3"
+      android:text="Item Name"
+      android:textSize="12sp"/>
+
+  <TextView
+      android:id="@+id/TextThird"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1.2"
+      android:text="Provider"
+      android:textSize="12sp"/>
+
+  <TextView
+      android:id="@+id/TextFourth"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.8"
+      android:text="Price"
+      android:textSize="12sp"/>
+
+  <TextView
+      android:id="@+id/TextFifth"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.5"
+      android:text="Qty"
+      android:textSize="12sp"/>
+</LinearLayout>

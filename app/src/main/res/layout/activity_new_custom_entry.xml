@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:id="@+id/newEntryView" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_entry"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:background="@color/zebra_blue"
+        android:padding="@dimen/margin_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_default">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/fieldsLayout">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/label_height"
+                    android:text="@string/notes2"
+                    android:id="@+id/notesLabel"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notesText"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/noBeContacted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox_noScan" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:id="@+id/submitButton"
+                android:text="@string/submit"
+                android:background="@color/zebra_blue"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/country_and_email3"
+                android:layout_margin="@dimen/margin_default"
+                android:gravity="bottom"
+                android:textColor="@color/near_black"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+
+   
+	  <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/zebra_blue</item>
+        <item name="colorPrimaryDark">@color/near_black</item>
+        <item name="colorAccent">@color/light_gray</item>
+    </style>
+
+    <style name="SingleLineEditText" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/zebra_blue</item>
+        <item name="colorControlNormal">@color/near_black</item>
+    </style>
+
+	
+	
+</resources>

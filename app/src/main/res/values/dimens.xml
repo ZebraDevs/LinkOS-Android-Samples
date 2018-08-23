@@ -1,0 +1,34 @@
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+
+    <dimen name="elevation_default">2dp</dimen>
+    <dimen name="elevation_large">5dp</dimen>
+
+    <dimen name="row_height_default">48dp</dimen>
+    <dimen name="row_icon_margin">6dp</dimen>
+
+    <dimen name="circle_button_size">72dp</dimen>
+    <dimen name="scroll_view_bottom">88dp</dimen>
+    <dimen name="product_text">18dp</dimen>
+	
+	 <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="barcode_data_height">75dp</dimen>
+
+    <dimen name="notes_height">150dp</dimen>
+
+    <dimen name="margin_large">20dp</dimen>
+
+    <dimen name="table_elevation">24dp</dimen>
+    <dimen name="upper_margin">10dp</dimen>
+    <dimen name="prog_bar_margin">30dp</dimen>
+    <dimen name="label_height">16dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="text_height">12dp</dimen>
+    <dimen name="path_height">40dp</dimen>
+    <dimen name="char_line_width">54dp</dimen>
+    <dimen name="switch_height">50dp</dimen>
+</resources>
