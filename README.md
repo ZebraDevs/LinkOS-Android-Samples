@@ -2,6 +2,8 @@
 A sample code app showing a sales demo to showcase scanning a UPC to then print and encode an RFID tag using a Zebra RFID printer. Tested primarily with the ZQ520R mobile printer.
 
 ## Projects contained in this repository:
+[RFID UPC Scan to Encode]( https://github.com/Zebra/LinkOS-Android-Samples/tree/520RFID_Android_Label_Tag)
+
 [ConnectivityDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/ConnectivityDemo)
 
 [DefaultPrinterDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/DefaultPrinterDemo)
