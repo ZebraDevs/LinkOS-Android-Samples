@@ -15,11 +15,8 @@
 
 package com.zebra.determineprinterlanguage;
 
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
@@ -104,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
         determinePrinterLanguageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Disable the button
+                determinePrinterLanguageButton.setEnabled(false);
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -137,7 +136,6 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
                     getAndSaveSettings();
-                    Looper.prepare();
                     connection = getZebraPrinterConn();
                     connection.open();
                     ZebraPrinter printer = ZebraPrinterFactory.getInstance(connection);
@@ -169,15 +167,28 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     connection.close();
-                    
+                    connection = null;
+
                 } catch (ConnectionException e) {
                     helper.showErrorDialogOnGuiThread(e.getMessage());
                 } catch (ZebraPrinterLanguageUnknownException e) {
                     helper.showErrorDialogOnGuiThread(e.getMessage());
                 } finally {
                     helper.dismissLoadingDialog();
-                    Looper.myLooper().quit();
+                    if (connection != null) {
+                        try {
+                            connection.close();
+                        } catch (ConnectionException e) {
+                            // Do nothing.
+                        }
+                    }
 
+                    // Enable the button
+                    runOnUiThread(new Runnable() {
+                        public void run() {
+                            determinePrinterLanguageButton.setEnabled(true);
+                        }
+                    });
                 }
             }
 
