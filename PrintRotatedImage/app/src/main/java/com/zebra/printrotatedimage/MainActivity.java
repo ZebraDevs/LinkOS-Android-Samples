@@ -8,12 +8,11 @@
  * displayed or distributed, in whole or in part, in any medium, by any means, for any purpose except as
  * expressly permitted under such license agreement.
  * <p/>
- * Copyright ZIH Corp. 2015
+ * Copyright ZIH Corp. 2015 - 2022
  * <p/>
  * ALL RIGHTS RESERVED
  * *********************************************
  */
-
 
 package com.zebra.printrotatedimage;
 
@@ -28,7 +27,6 @@ import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Looper;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.LinkMovementMethod;
@@ -82,12 +80,10 @@ public class MainActivity extends AppCompatActivity {
     private static final String PREFS_NAME = "OurSavedAddress";
     private UIHelper helper = new UIHelper(this);
 
-
     private static int TAKE_PICTURE = 1;
     private static int PICTURE_FROM_GALLERY = 2;
     private static File file = null;
     private int rotationAngle = 0;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,12 +107,10 @@ public class MainActivity extends AppCompatActivity {
         TextView t2 = (TextView) findViewById(R.id.launchpad_link);
         t2.setMovementMethod(LinkMovementMethod.getInstance());
 
-
         printStoragePath = (EditText) findViewById(R.id.printerStorePath);
 
         cb = (CheckBox) findViewById(R.id.checkBox);
         cb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     printStoragePath.setVisibility(View.VISIBLE);
@@ -126,13 +120,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         btRadioButton = (RadioButton) this.findViewById(R.id.bluetoothRadio);
-
 
         RadioGroup radioGroup = (RadioGroup) this.findViewById(R.id.radioGroup);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.bluetoothRadio) {
                     toggleEditField(macAddressEditText, true);
@@ -152,14 +143,11 @@ public class MainActivity extends AppCompatActivity {
         angleSpinner.setAdapter(angleAdapter);
         angleSpinner.setOnItemSelectedListener(new MyOnItemSelectedListener());
 
-
         imageSelectionSpinner = (Spinner) findViewById(R.id.imageSelection);
         ArrayAdapter<CharSequence> imageAdapter = ArrayAdapter.createFromResource(this, R.array.image_selection, android.R.layout.simple_spinner_item);
         imageAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         imageSelectionSpinner.setAdapter(imageAdapter);
         imageSelectionSpinner.setOnItemSelectedListener(new OnItemsSelectedListener());
-
-
     }
 
     @Override
@@ -169,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
             if (requestCode == TAKE_PICTURE) {
                 printRotatedPhotoFromExternal(BitmapFactory.decodeFile(file.getAbsolutePath()), rotationAngle);
             }
+
             if (requestCode == PICTURE_FROM_GALLERY) {
                 Uri imgPath = data.getData();
                 Bitmap myBitmap = null;
@@ -191,14 +180,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
     /**
      * OnItemSelectedListener for angleSpinner
      */
 
-
     public class MyOnItemSelectedListener implements AdapterView.OnItemSelectedListener {
-
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
             rotationAngle = Integer.parseInt(parent.getItemAtPosition(pos).toString());
         }
@@ -225,10 +211,9 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onNothingSelected(AdapterView<?> parent) {
-
+            // Do nothing
         }
     }
-
 
     /**
      * Intents to make a call when image is captured using camera
@@ -280,20 +265,17 @@ public class MainActivity extends AppCompatActivity {
         printPhotoFromExternal(rotatedBitmap);
     }
 
-
     /**
      * This method makes the call to the printer and send the images to the printer to print and implements best practices to check the status of the printer.
      *
      * @param bitmap
      */
     private void printPhotoFromExternal(final Bitmap bitmap) {
-
         new Thread(new Runnable() {
             public void run() {
 
                 try {
                     getAndSaveSettings();
-                    Looper.prepare();
                     connection = getZebraPrinterConn();
                     connection.open();
                     ZebraPrinter printer = ZebraPrinterFactory.getInstance(connection);
@@ -344,15 +326,10 @@ public class MainActivity extends AppCompatActivity {
                 } finally {
                     bitmap.recycle();
                     helper.dismissLoadingDialog();
-                    Looper.myLooper().quit();
-
                 }
             }
-
         }).start();
-
     }
-
 
     /**
      * This method implements the best practices i.e., Checks the language of the printer and set the language of the printer to ZPL.
@@ -360,8 +337,6 @@ public class MainActivity extends AppCompatActivity {
      * @throws ConnectionException
      */
     private void getPrinterStatus() throws ConnectionException {
-
-
         final String printerLanguage = SGD.GET("device.languages", connection);
 
         final String displayPrinterLanguage = "Printer Language is " + printerLanguage;
@@ -371,9 +346,7 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-
                 Toast.makeText(MainActivity.this, displayPrinterLanguage + "\n" + "Language set to ZPL", Toast.LENGTH_LONG).show();
-
             }
         });
 
@@ -451,8 +424,5 @@ public class MainActivity extends AppCompatActivity {
                 b.setBackgroundColor(getResources().getColor(R.color.zebra_blue));
             }
         });
-
     }
-
-
 }
