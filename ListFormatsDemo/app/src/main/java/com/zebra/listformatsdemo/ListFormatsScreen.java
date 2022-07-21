@@ -7,7 +7,7 @@
  * displayed or distributed, in whole or in part, in any medium, by any means, for any purpose except as
  * expressly permitted under such license agreement.
  * 
- * Copyright ZIH Corp. 2015
+ * Copyright ZIH Corp. 2015 - 2022
  * 
  * ALL RIGHTS RESERVED
  ***********************************************/
@@ -16,13 +16,9 @@ package com.zebra.listformatsdemo;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.os.Looper;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zebra.sdk.comm.BluetoothConnection;
@@ -31,12 +27,9 @@ import com.zebra.sdk.comm.ConnectionException;
 import com.zebra.sdk.comm.TcpConnection;
 import com.zebra.sdk.device.ZebraIllegalArgumentException;
 import com.zebra.sdk.printer.PrinterLanguage;
-import com.zebra.sdk.printer.PrinterStatus;
-import com.zebra.sdk.printer.SGD;
 import com.zebra.sdk.printer.ZebraPrinter;
 import com.zebra.sdk.printer.ZebraPrinterFactory;
 import com.zebra.sdk.printer.ZebraPrinterLanguageUnknownException;
-import com.zebra.sdk.printer.ZebraPrinterLinkOs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,21 +63,15 @@ public class ListFormatsScreen extends Activity {
         statusList.setAdapter(statusListAdapter);
 
         new Thread(new Runnable() {
-
             public void run() {
-                Looper.prepare();
                 getFileList();
-                Looper.loop();
-                Looper.myLooper().quit();
             }
         }).start();
-
     }
 
     /**
      * Main method to implement the functionality of the app.
      */
-
 
     private void getFileList() {
         if (bluetoothSelected == true) {
@@ -97,33 +84,33 @@ public class ListFormatsScreen extends Activity {
                 helper.showErrorDialogOnGuiThread("Port number is invalid");
                 return;
             }
-
         }
         try {
-
             connection.open();
             ZebraPrinter printer = ZebraPrinterFactory.getInstance(connection);
 
             PrinterLanguage pl = printer.getPrinterControlLanguage();
             String[] formatExtensions;
 
-                helper.showLoadingDialog("Retrieving " + (retrieveFormats ? " Formats" : " Files") + "...");
-                if (pl == PrinterLanguage.ZPL) {
-                    formatExtensions = new String[] { "ZPL" };
-                } else {
-                    formatExtensions = new String[] { "FMT", "LBL" };
-                }
-                String[] formats = null;
-
-                if (retrieveFormats) {
-                    formats = printer.retrieveFileNames(formatExtensions);
-                } else {
-                    formats = printer.retrieveFileNames();
-                }
-                for (int i = 0; i < formats.length; i++) {
-                    formatsList.add(formats[i]);
-
+            helper.showLoadingDialog("Retrieving " + (retrieveFormats ? " Formats" : " Files") + "...");
+            if (pl == PrinterLanguage.ZPL) {
+                formatExtensions = new String[] { "ZPL" };
+            } else {
+                formatExtensions = new String[] { "FMT", "LBL" };
             }
+
+            String[] formats = null;
+
+            if (retrieveFormats) {
+                formats = printer.retrieveFileNames(formatExtensions);
+            } else {
+                formats = printer.retrieveFileNames();
+            }
+
+            for (int i = 0; i < formats.length; i++) {
+                formatsList.add(formats[i]);
+            }
+
             connection.close();
             saveSettings();
             updateGuiWithFormats();
@@ -137,7 +124,6 @@ public class ListFormatsScreen extends Activity {
             helper.dismissLoadingDialog();
         }
     }
-
 
     /**
      *This method saves the entered address of the printer.
