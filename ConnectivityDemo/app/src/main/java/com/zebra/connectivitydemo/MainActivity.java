@@ -17,15 +17,11 @@
 
 package com.zebra.connectivitydemo;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.LinkMovementMethod;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -45,11 +41,6 @@ import com.zebra.sdk.printer.ZebraPrinter;
 import com.zebra.sdk.printer.ZebraPrinterFactory;
 import com.zebra.sdk.printer.ZebraPrinterLanguageUnknownException;
 import com.zebra.sdk.printer.ZebraPrinterLinkOs;
-
-import java.math.BigInteger;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.nio.ByteOrder;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -119,10 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 new Thread(new Runnable() {
                     public void run() {
                         enableTestButton(false);
-                        Looper.prepare();
                         doConnectionTest();
-                        Looper.loop();
-                        Looper.myLooper().quit();
                     }
                 }).start();
             }
