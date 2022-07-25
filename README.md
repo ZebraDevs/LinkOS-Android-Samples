@@ -24,7 +24,7 @@
 
 [SendFileDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/SendFileDemo)
 
-[SignatureCaptureDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/SetGetDoDemo)
+[SetGetDoDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/SetGetDoDemo)
 
 [SignatureCaptureDemo]( https://github.com/Zebra/LinkOS-Android-Samples/tree/SignatureCaptureDemo)
 
