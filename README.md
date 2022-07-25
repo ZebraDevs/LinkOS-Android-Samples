@@ -18,7 +18,7 @@
 
 [PrintRotatedImage]( https://github.com/Zebra/LinkOS-Android-Samples/tree/PrintRotatedImage)
 
-[PrintStationrrr]( https://github.com/Zebra/LinkOS-Android-Samples/tree/PrintStation)
+[PrintStation]( https://github.com/Zebra/LinkOS-Android-Samples/tree/PrintStation)
 
 [RetrievingMagneticCardTracks]( https://github.com/Zebra/LinkOS-Android-Samples/tree/RetrievingMagneticCardTracks)
 
