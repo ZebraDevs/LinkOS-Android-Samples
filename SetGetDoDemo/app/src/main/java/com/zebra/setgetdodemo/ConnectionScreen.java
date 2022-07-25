@@ -7,14 +7,13 @@
  * displayed or distributed, in whole or in part, in any medium, by any means, for any purpose except as
  * expressly permitted under such license agreement.
  * 
- * Copyright ZIH Corp. 2010
+ * Copyright ZIH Corp. 2010 - 2022
  *
  * ALL RIGHTS RESERVED 
  ***********************************************/
 
 package com.zebra.setgetdodemo;
 
-import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -34,7 +33,6 @@ import android.widget.TextView;
  * 
 
  */
-
 
 public abstract class ConnectionScreen extends AppCompatActivity {
 

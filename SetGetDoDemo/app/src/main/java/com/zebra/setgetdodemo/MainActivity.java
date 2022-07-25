@@ -1,33 +1,21 @@
+/**********************************************
+ * CONFIDENTIAL AND PROPRIETARY
+ *
+ * The source code and other information contained herein is the confidential and the exclusive property of
+ * ZIH Corp. and is subject to the terms and conditions in your end user license agreement.
+ * This source code, and any other information contained herein, shall not be copied, reproduced, published,
+ * displayed or distributed, in whole or in part, in any medium, by any means, for any purpose except as
+ * expressly permitted under such license agreement.
+ *
+ * Copyright ZIH Corp. 2010 - 2022
+ *
+ * ALL RIGHTS RESERVED
+ ***********************************************/
+
 package com.zebra.setgetdodemo;
 
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Looper;
-import android.support.v7.app.AppCompatActivity;
-import android.text.method.LinkMovementMethod;
-import android.view.Menu;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.zebra.sdk.comm.BluetoothConnection;
-import com.zebra.sdk.comm.Connection;
-import com.zebra.sdk.comm.ConnectionException;
-import com.zebra.sdk.comm.TcpConnection;
-import com.zebra.sdk.device.MagCardReader;
-import com.zebra.sdk.device.MagCardReaderFactory;
-import com.zebra.sdk.printer.PrinterStatus;
-import com.zebra.sdk.printer.SGD;
-import com.zebra.sdk.printer.ZebraPrinter;
-import com.zebra.sdk.printer.ZebraPrinterFactory;
-import com.zebra.sdk.printer.ZebraPrinterLanguageUnknownException;
 
 public class MainActivity extends ConnectionScreen {
 
