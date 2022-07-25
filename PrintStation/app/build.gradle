@@ -25,20 +25,6 @@ android {
 }
 
 dependencies {
-    compile files('libs/commons-io-2.2.jar')
-    compile files('libs/commons-lang3-3.4.jar')
-    compile files('libs/commons-net-3.1.jar')
-    compile files('libs/commons-validator-1.4.0.jar')
-    compile files('libs/core-1.53.0.0.jar')
-    compile files('libs/httpcore-4.3.1.jar')
-    compile files('libs/httpmime-4.3.2.jar')
-    compile files('libs/jackson-annotations-2.2.3.jar')
-    compile files('libs/jackson-core-2.2.3.jar')
-    compile files('libs/jackson-databind-2.2.3.jar')
-    compile files('libs/opencsv-2.2.jar')
-    compile files('libs/pkix-1.53.0.0.jar')
-    compile files('libs/prov-1.53.0.0.jar')
-    compile files('libs/snmp6_1.jar')
-    compile files('libs/ZSDK_ANDROID_API.jar')
-    compile files('libs/ZXingAndroid.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('libs/ZXingAndroid.jar')
 }
