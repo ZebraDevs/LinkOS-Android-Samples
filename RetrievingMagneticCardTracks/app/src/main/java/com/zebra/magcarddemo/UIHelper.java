@@ -8,7 +8,7 @@
  * displayed or distributed, in whole or in part, in any medium, by any means, for any purpose except as
  * expressly permitted under such license agreement.
  * <p/>
- * Copyright ZIH Corp. 2010
+ * Copyright ZIH Corp. 2010 - 2022
  * <p/>
  * ALL RIGHTS RESERVED
  * *********************************************
